@@ -1,0 +1,1 @@
+Travaux dirigés (TP3) du cours d’algorithmique, avec une introduction pratique au langage Python. Ce dépôt regroupe des exercices, implémentations et expérimentations visant à renforcer les bases en logique algorithmique et en programmation.
