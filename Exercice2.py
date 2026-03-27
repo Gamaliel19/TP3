@@ -11,6 +11,8 @@ b) avec TANT QUE
 
 """
 
+#Code python
+
 # a) avec POUR
 N = int(input("Entrez le nombre de jours : "))
 while N < 0:
@@ -35,5 +37,49 @@ while i <= N:
     i += 1
 
 print(f"Croissance cumulée sur {N} jours : {croissance}")
+
+
+#Version pseudo code
+# a) avec POUR
+"""
+Algorithme CroissanceCumulative_Pour
+    Entrée : N (nombre de jours)
+    Sortie : croissance (croissance cumulée)
+Début
+    Ecrire "Entrez le nombre de jours : "
+    Lire N
+    Tant que N < 0 faire
+        Ecrire "Le nombre de jours doit être supérieur ou égal à 0."
+        Ecrire "Entrez le nombre de jours : "
+        Lire N
+    croissance <- 1
+    Pour i de 1 à N faire
+        croissance <- croissance * i
+    Fin Pour
+    Ecrire "Croissance cumulée sur ", N, " jours : ", croissance
+Fin
+"""
+
+# b) avec TANT QUE
+"""
+Algorithme CroissanceCumulative_TantQue
+    Entrée : N (nombre de jours)
+    Sortie : croissance (croissance cumulée)
+Début
+    Ecrire "Entrez le nombre de jours : "
+    Lire N
+    Tant que N < 0 faire
+        Ecrire "Le nombre de jours doit être supérieur ou égal à 0."
+        Ecrire "Entrez le nombre de jours : "
+        Lire N
+    croissance <- 1
+    i <- 1
+    Tant que i <= N faire
+        croissance <- croissance * i
+        i <- i + 1
+    Fin Tant que
+    Ecrire "Croissance cumulée sur ", N, " jours : ", croissance
+Fin    
+"""
 
 
